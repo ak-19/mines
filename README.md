@@ -1,1 +1,1 @@
-React based implementation of minesweaper clone
+React based minesweeper clone
