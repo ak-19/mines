@@ -8,14 +8,16 @@ class GridCell extends PureComponent {
            className="grid-box"
            onClick={e => this.props.cellClicked(row,col)}>
         <div className="grid-box-content">
-          {
-            state.hidden
-            ? null
-            :
-              state.bomb
-              ? <img src="./bomb.png" alt="bomb"/>
-              : state.numberOfBombs
-          }
+          <div className="grid-box-content-text">
+            {
+              state.hidden
+              ? null
+              :
+                state.bomb
+                ? <img src="./bomb.png" alt="bomb"/>
+                : state.numberOfBombs
+            }
+          </div>
         </div>
       </div>
     )
