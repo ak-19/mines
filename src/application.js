@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import GridCell from './gridcell';
 import generateStateArray from './util/generatestatearray';
 import calcaulateNumberOfBombs from './util/calcaulatenumberofbombs';
+import Modal from './modal';
 import './application.css';
 
 
@@ -57,12 +58,7 @@ class Application extends Component {
 
   renderModal(){
     return (
-      <div id="myModal" className="modal">
-        <div className="modal-content">
-            <h3 className="start-new-game-message">{this.state.gameOverMessage}</h3>
-            <div className="start-new-game-button" onClick={e => this.startNewGame()}>Start new game</div>
-        </div>
-      </div>
+      <Modal startNewGame={this.startNewGame} gameOverMessage={this.state.gameOverMessage}/>
     )
   }
 
