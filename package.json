@@ -8,6 +8,7 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "heroku-prebuild": "react-scripts build",
     "start": "node index.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
