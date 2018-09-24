@@ -58,7 +58,7 @@ class Application extends Component {
 
   renderModal(){
     return (
-      <Modal startNewGame={this.startNewGame} gameOverMessage={this.state.gameOverMessage}/>
+      <Modal startNewGame={e => this.startNewGame()} gameOverMessage={this.state.gameOverMessage}/>
     )
   }
 
