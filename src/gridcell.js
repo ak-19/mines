@@ -14,7 +14,7 @@ class GridCell extends PureComponent {
               ? null
               :
                 state.bomb
-                ? <img src="./bomb.png" alt="bomb"/>
+                ? <img src="./mine.png" alt="bomb"/>
                 : state.numberOfBombs
             }
           </div>
