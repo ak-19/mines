@@ -34,7 +34,8 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-size: 34px;
-  color: blue;
+  color: green;
+  text-shadow: 1px 1px grey;
 }
 
 img{
